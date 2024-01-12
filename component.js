@@ -44,3 +44,4 @@ export const createCard = function(imgSrc, credit, description, link, maxDescrip
     const cardContainer = document.getElementById('card-container');
     cardContainer.appendChild(card);
 };
+
