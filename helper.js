@@ -4,7 +4,7 @@ let cartItems = [];
 
 export function displayBooks(books) {
     books.forEach((book) =>{
-        component.createCard(book.img, book.title, book.price, book.category);
+        component.createCard(book.img, book.title, book.price, book.category, book.asin);
     });
 }
 

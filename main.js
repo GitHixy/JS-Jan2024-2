@@ -5,7 +5,10 @@ import * as helper from "./helper.js"
 
 const url = "https://striveschool-api.herokuapp.com/books"
 const searchBar = document.getElementById('searchBar');
-const searchButton = document.getElementById('searchButton');
+const searchForm = document.getElementById('searchForm'); 
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
 searchBar.disabled = true;
 
 
@@ -29,6 +32,5 @@ fetch(url)
 .catch((error) => {
     console.error('Error:', error);
 });
-
 
 
